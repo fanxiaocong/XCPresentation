@@ -1,6 +1,6 @@
 //
-//  XPresentationDemoUITests.m
-//  XPresentationDemoUITests
+//  XCPresentationDemoUITests.m
+//  XCPresentationDemoUITests
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface XPresentationDemoUITests : XCTestCase
+@interface XCPresentationDemoUITests : XCTestCase
 
 @end
 
-@implementation XPresentationDemoUITests
+@implementation XCPresentationDemoUITests
 
 - (void)setUp {
     [super setUp];

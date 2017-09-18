@@ -1,6 +1,6 @@
 //
-//  XPresentationPanAnimation.m
-//  XPresentationDemo
+//  XCPresentationPanAnimation.m
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
@@ -11,14 +11,14 @@
  *  备注：平移动画 🐾
  */
 
-#import "XPresentationPanAnimation.h"
+#import "XCPresentationPanAnimation.h"
 
 
 #define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
 
 
-@implementation XPresentationPanAnimation
+@implementation XCPresentationPanAnimation
 
 - (instancetype)init
 {
@@ -46,12 +46,12 @@
 {
     switch (self.style)
     {
-        case XPresentationAnimationStylePresent:
+        case XCPresentationAnimationStylePresent:
         {
             [self presentAnimation];
             break;
         }
-        case XPresentationAnimationStyleDismiss:
+        case XCPresentationAnimationStyleDismiss:
         {
             [self dismissAnimation];
             break;

@@ -1,6 +1,6 @@
 //
-//  XPresentationAnimation.h
-//  XPresentationDemo
+//  XCPresentationAnimation.h
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
@@ -9,19 +9,19 @@
 #import <UIKit/UIKit.h>
 
 
-typedef NS_ENUM(NSInteger, XPresentationAnimationStyle)
+typedef NS_ENUM(NSInteger, XCPresentationAnimationStyle)
 {
     /// 显示：present
-    XPresentationAnimationStylePresent = 0,
+    XCPresentationAnimationStylePresent = 0,
     /// 消失：dismiss
-    XPresentationAnimationStyleDismiss
+    XCPresentationAnimationStyleDismiss
 };
 
-@interface XPresentationAnimation : NSObject<UIViewControllerAnimatedTransitioning>
+@interface XCPresentationAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
 #pragma mark - 👀 Public 👀 💤
 /** 👀 动画的样式：入栈、出栈 👀 */
-@property (assign, nonatomic) XPresentationAnimationStyle style;
+@property (assign, nonatomic) XCPresentationAnimationStyle style;
 /** 👀 动画执行的时间（默认为 0.3s） 👀 */
 @property (assign, nonatomic) NSTimeInterval duration;
 

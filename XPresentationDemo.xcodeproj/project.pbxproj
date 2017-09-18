@@ -15,15 +15,15 @@
 		1E6D63231F6CC9ED002029B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6D63211F6CC9ED002029B5 /* LaunchScreen.storyboard */; };
 		1E6D632E1F6CC9EE002029B5 /* XPresentationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D632D1F6CC9EE002029B5 /* XPresentationDemoTests.m */; };
 		1E6D63391F6CC9EE002029B5 /* XPresentationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63381F6CC9EE002029B5 /* XPresentationDemoUITests.m */; };
-		1E6D63491F6CCA22002029B5 /* XPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63481F6CCA22002029B5 /* XPresentation.m */; };
-		1E6D634C1F6CCA94002029B5 /* XPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D634B1F6CCA94002029B5 /* XPresentationAnimation.m */; };
-		1E6D634F1F6CD1D5002029B5 /* XPresentationBubbleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D634E1F6CD1D5002029B5 /* XPresentationBubbleAnimation.m */; };
 		1E6D63521F6CD731002029B5 /* XXXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63511F6CD731002029B5 /* XXXViewController.m */; };
-		1E6D63581F6D0822002029B5 /* XPresentationAlertAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63571F6D0822002029B5 /* XPresentationAlertAnimation.m */; };
-		1E6D635B1F6D1E38002029B5 /* XPresentationPanAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D635A1F6D1E38002029B5 /* XPresentationPanAnimation.m */; };
-		1E6D635E1F6D238E002029B5 /* XPresentationScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D635D1F6D238E002029B5 /* XPresentationScaleAnimation.m */; };
-		1E6D63671F6D2E56002029B5 /* XPresentationExplodeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63661F6D2E56002029B5 /* XPresentationExplodeAnimation.m */; };
 		1E6D63721F6FA967002029B5 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E6D63711F6FA967002029B5 /* 1.png */; };
+		1E6D63821F6FB0DA002029B5 /* XCPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63751F6FB0DA002029B5 /* XCPresentation.m */; };
+		1E6D63831F6FB0DA002029B5 /* XCPresentationAlertAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63771F6FB0DA002029B5 /* XCPresentationAlertAnimation.m */; };
+		1E6D63841F6FB0DA002029B5 /* XCPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63791F6FB0DA002029B5 /* XCPresentationAnimation.m */; };
+		1E6D63851F6FB0DA002029B5 /* XCPresentationBubbleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D637B1F6FB0DA002029B5 /* XCPresentationBubbleAnimation.m */; };
+		1E6D63861F6FB0DA002029B5 /* XCPresentationExplodeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D637D1F6FB0DA002029B5 /* XCPresentationExplodeAnimation.m */; };
+		1E6D63871F6FB0DA002029B5 /* XCPresentationPanAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D637F1F6FB0DA002029B5 /* XCPresentationPanAnimation.m */; };
+		1E6D63881F6FB0DA002029B5 /* XCPresentationScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63811F6FB0DA002029B5 /* XCPresentationScaleAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,23 +60,23 @@
 		1E6D63341F6CC9EE002029B5 /* XPresentationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XPresentationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6D63381F6CC9EE002029B5 /* XPresentationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPresentationDemoUITests.m; sourceTree = "<group>"; };
 		1E6D633A1F6CC9EE002029B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E6D63471F6CCA22002029B5 /* XPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPresentation.h; sourceTree = "<group>"; };
-		1E6D63481F6CCA22002029B5 /* XPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPresentation.m; sourceTree = "<group>"; };
-		1E6D634A1F6CCA94002029B5 /* XPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPresentationAnimation.h; sourceTree = "<group>"; };
-		1E6D634B1F6CCA94002029B5 /* XPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPresentationAnimation.m; sourceTree = "<group>"; };
-		1E6D634D1F6CD1D5002029B5 /* XPresentationBubbleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPresentationBubbleAnimation.h; sourceTree = "<group>"; };
-		1E6D634E1F6CD1D5002029B5 /* XPresentationBubbleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPresentationBubbleAnimation.m; sourceTree = "<group>"; };
 		1E6D63501F6CD731002029B5 /* XXXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXXViewController.h; sourceTree = "<group>"; };
 		1E6D63511F6CD731002029B5 /* XXXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXXViewController.m; sourceTree = "<group>"; };
-		1E6D63561F6D0822002029B5 /* XPresentationAlertAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPresentationAlertAnimation.h; sourceTree = "<group>"; };
-		1E6D63571F6D0822002029B5 /* XPresentationAlertAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPresentationAlertAnimation.m; sourceTree = "<group>"; };
-		1E6D63591F6D1E38002029B5 /* XPresentationPanAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPresentationPanAnimation.h; sourceTree = "<group>"; };
-		1E6D635A1F6D1E38002029B5 /* XPresentationPanAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPresentationPanAnimation.m; sourceTree = "<group>"; };
-		1E6D635C1F6D238E002029B5 /* XPresentationScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPresentationScaleAnimation.h; sourceTree = "<group>"; };
-		1E6D635D1F6D238E002029B5 /* XPresentationScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPresentationScaleAnimation.m; sourceTree = "<group>"; };
-		1E6D63651F6D2E56002029B5 /* XPresentationExplodeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPresentationExplodeAnimation.h; sourceTree = "<group>"; };
-		1E6D63661F6D2E56002029B5 /* XPresentationExplodeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPresentationExplodeAnimation.m; sourceTree = "<group>"; };
 		1E6D63711F6FA967002029B5 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		1E6D63741F6FB0DA002029B5 /* XCPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentation.h; sourceTree = "<group>"; };
+		1E6D63751F6FB0DA002029B5 /* XCPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentation.m; sourceTree = "<group>"; };
+		1E6D63761F6FB0DA002029B5 /* XCPresentationAlertAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationAlertAnimation.h; sourceTree = "<group>"; };
+		1E6D63771F6FB0DA002029B5 /* XCPresentationAlertAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationAlertAnimation.m; sourceTree = "<group>"; };
+		1E6D63781F6FB0DA002029B5 /* XCPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationAnimation.h; sourceTree = "<group>"; };
+		1E6D63791F6FB0DA002029B5 /* XCPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationAnimation.m; sourceTree = "<group>"; };
+		1E6D637A1F6FB0DA002029B5 /* XCPresentationBubbleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationBubbleAnimation.h; sourceTree = "<group>"; };
+		1E6D637B1F6FB0DA002029B5 /* XCPresentationBubbleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationBubbleAnimation.m; sourceTree = "<group>"; };
+		1E6D637C1F6FB0DA002029B5 /* XCPresentationExplodeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationExplodeAnimation.h; sourceTree = "<group>"; };
+		1E6D637D1F6FB0DA002029B5 /* XCPresentationExplodeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationExplodeAnimation.m; sourceTree = "<group>"; };
+		1E6D637E1F6FB0DA002029B5 /* XCPresentationPanAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationPanAnimation.h; sourceTree = "<group>"; };
+		1E6D637F1F6FB0DA002029B5 /* XCPresentationPanAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationPanAnimation.m; sourceTree = "<group>"; };
+		1E6D63801F6FB0DA002029B5 /* XCPresentationScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationScaleAnimation.h; sourceTree = "<group>"; };
+		1E6D63811F6FB0DA002029B5 /* XCPresentationScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationScaleAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 		1E6D63071F6CC9ED002029B5 = {
 			isa = PBXGroup;
 			children = (
-				1E6D63461F6CCA09002029B5 /* XPresentation */,
-				1E6D63121F6CC9ED002029B5 /* XPresentationDemo */,
+				1E6D63731F6FB0DA002029B5 /* XCPresentation */,
+				1E6D63121F6CC9ED002029B5 /* XCPresentationDemo */,
 				1E6D632C1F6CC9EE002029B5 /* XPresentationDemoTests */,
 				1E6D63371F6CC9EE002029B5 /* XPresentationDemoUITests */,
 				1E6D63111F6CC9ED002029B5 /* Products */,
@@ -125,7 +125,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1E6D63121F6CC9ED002029B5 /* XPresentationDemo */ = {
+		1E6D63121F6CC9ED002029B5 /* XCPresentationDemo */ = {
 			isa = PBXGroup;
 			children = (
 				1E6D63161F6CC9ED002029B5 /* AppDelegate.h */,
@@ -141,6 +141,7 @@
 				1E6D63621F6D27A5002029B5 /* images */,
 				1E6D63131F6CC9ED002029B5 /* Supporting Files */,
 			);
+			name = XCPresentationDemo;
 			path = XPresentationDemo;
 			sourceTree = "<group>";
 		};
@@ -170,33 +171,33 @@
 			path = XPresentationDemoUITests;
 			sourceTree = "<group>";
 		};
-		1E6D63461F6CCA09002029B5 /* XPresentation */ = {
-			isa = PBXGroup;
-			children = (
-				1E6D63471F6CCA22002029B5 /* XPresentation.h */,
-				1E6D63481F6CCA22002029B5 /* XPresentation.m */,
-				1E6D634A1F6CCA94002029B5 /* XPresentationAnimation.h */,
-				1E6D634B1F6CCA94002029B5 /* XPresentationAnimation.m */,
-				1E6D634D1F6CD1D5002029B5 /* XPresentationBubbleAnimation.h */,
-				1E6D634E1F6CD1D5002029B5 /* XPresentationBubbleAnimation.m */,
-				1E6D635C1F6D238E002029B5 /* XPresentationScaleAnimation.h */,
-				1E6D635D1F6D238E002029B5 /* XPresentationScaleAnimation.m */,
-				1E6D63651F6D2E56002029B5 /* XPresentationExplodeAnimation.h */,
-				1E6D63661F6D2E56002029B5 /* XPresentationExplodeAnimation.m */,
-				1E6D63561F6D0822002029B5 /* XPresentationAlertAnimation.h */,
-				1E6D63571F6D0822002029B5 /* XPresentationAlertAnimation.m */,
-				1E6D63591F6D1E38002029B5 /* XPresentationPanAnimation.h */,
-				1E6D635A1F6D1E38002029B5 /* XPresentationPanAnimation.m */,
-			);
-			path = XPresentation;
-			sourceTree = "<group>";
-		};
 		1E6D63621F6D27A5002029B5 /* images */ = {
 			isa = PBXGroup;
 			children = (
 				1E6D63711F6FA967002029B5 /* 1.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		1E6D63731F6FB0DA002029B5 /* XCPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				1E6D63741F6FB0DA002029B5 /* XCPresentation.h */,
+				1E6D63751F6FB0DA002029B5 /* XCPresentation.m */,
+				1E6D63761F6FB0DA002029B5 /* XCPresentationAlertAnimation.h */,
+				1E6D63771F6FB0DA002029B5 /* XCPresentationAlertAnimation.m */,
+				1E6D63781F6FB0DA002029B5 /* XCPresentationAnimation.h */,
+				1E6D63791F6FB0DA002029B5 /* XCPresentationAnimation.m */,
+				1E6D637A1F6FB0DA002029B5 /* XCPresentationBubbleAnimation.h */,
+				1E6D637B1F6FB0DA002029B5 /* XCPresentationBubbleAnimation.m */,
+				1E6D637C1F6FB0DA002029B5 /* XCPresentationExplodeAnimation.h */,
+				1E6D637D1F6FB0DA002029B5 /* XCPresentationExplodeAnimation.m */,
+				1E6D637E1F6FB0DA002029B5 /* XCPresentationPanAnimation.h */,
+				1E6D637F1F6FB0DA002029B5 /* XCPresentationPanAnimation.m */,
+				1E6D63801F6FB0DA002029B5 /* XCPresentationScaleAnimation.h */,
+				1E6D63811F6FB0DA002029B5 /* XCPresentationScaleAnimation.m */,
+			);
+			path = XCPresentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,17 +334,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E6D635E1F6D238E002029B5 /* XPresentationScaleAnimation.m in Sources */,
-				1E6D635B1F6D1E38002029B5 /* XPresentationPanAnimation.m in Sources */,
+				1E6D63831F6FB0DA002029B5 /* XCPresentationAlertAnimation.m in Sources */,
+				1E6D63821F6FB0DA002029B5 /* XCPresentation.m in Sources */,
 				1E6D631B1F6CC9ED002029B5 /* ViewController.m in Sources */,
+				1E6D63871F6FB0DA002029B5 /* XCPresentationPanAnimation.m in Sources */,
 				1E6D63181F6CC9ED002029B5 /* AppDelegate.m in Sources */,
-				1E6D634C1F6CCA94002029B5 /* XPresentationAnimation.m in Sources */,
-				1E6D63491F6CCA22002029B5 /* XPresentation.m in Sources */,
-				1E6D63671F6D2E56002029B5 /* XPresentationExplodeAnimation.m in Sources */,
-				1E6D63581F6D0822002029B5 /* XPresentationAlertAnimation.m in Sources */,
 				1E6D63151F6CC9ED002029B5 /* main.m in Sources */,
+				1E6D63881F6FB0DA002029B5 /* XCPresentationScaleAnimation.m in Sources */,
+				1E6D63851F6FB0DA002029B5 /* XCPresentationBubbleAnimation.m in Sources */,
+				1E6D63841F6FB0DA002029B5 /* XCPresentationAnimation.m in Sources */,
 				1E6D63521F6CD731002029B5 /* XXXViewController.m in Sources */,
-				1E6D634F1F6CD1D5002029B5 /* XPresentationBubbleAnimation.m in Sources */,
+				1E6D63861F6FB0DA002029B5 /* XCPresentationExplodeAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +574,7 @@
 				1E6D633F1F6CC9EE002029B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E6D63401F6CC9EE002029B5 /* Build configuration list for PBXNativeTarget "XPresentationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +583,7 @@
 				1E6D63421F6CC9EE002029B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E6D63431F6CC9EE002029B5 /* Build configuration list for PBXNativeTarget "XPresentationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +592,7 @@
 				1E6D63451F6CC9EE002029B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

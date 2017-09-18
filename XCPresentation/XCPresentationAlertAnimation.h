@@ -1,6 +1,6 @@
 //
-//  XPresentationAlertAnimation.h
-//  XPresentationDemo
+//  XCPresentationAlertAnimation.h
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
@@ -11,7 +11,7 @@
  *  备注：弹框动画 🐾
  */
 
-#import "XPresentationAnimation.h"
+#import "XCPresentationAnimation.h"
 
 
 typedef NS_ENUM(NSInteger, AlertAnimationPresentStyle)
@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, AlertAnimationDismissStyle)
 };
 
 
-@interface XPresentationAlertAnimation : XPresentationAnimation
+@interface XCPresentationAlertAnimation : XCPresentationAnimation
 
 /** 👀 显示的样式 👀 */
 @property (assign, nonatomic) AlertAnimationPresentStyle presentStyle;

@@ -1,14 +1,14 @@
 //
-//  XPresentationAnimation.m
-//  XPresentationDemo
+//  XCPresentationAnimation.m
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
 //
 
-#import "XPresentationAnimation.h"
+#import "XCPresentationAnimation.h"
 
-@implementation XPresentationAnimation
+@implementation XCPresentationAnimation
 
 #pragma mark - 👀 Init Method 👀 💤
 
@@ -26,7 +26,7 @@
 - (void)setupDefaults
 {
     _duration = .3f;
-    _style    = XPresentationAnimationStylePresent;
+    _style    = XCPresentationAnimationStylePresent;
 }
 
 #pragma mark - 🔓 👀 Public Method 👀

@@ -1,6 +1,6 @@
 //
-//  XPresentationPanAnimation.h
-//  XPresentationDemo
+//  XCPresentationPanAnimation.h
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
@@ -12,7 +12,7 @@
  */
 
 
-#import "XPresentationAnimation.h"
+#import "XCPresentationAnimation.h"
 
 typedef NS_ENUM(NSInteger, PanAnimationPresentStyle)
 {
@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, PanAnimationPresentStyle)
 };
 
 
-@interface XPresentationPanAnimation : XPresentationAnimation
+@interface XCPresentationPanAnimation : XCPresentationAnimation
 
 /** 👀 显示的样式 👀 */
 @property (assign, nonatomic) PanAnimationPresentStyle presentStyle;

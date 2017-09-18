@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  XPresentationDemo
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
@@ -8,12 +8,12 @@
 
 #import "ViewController.h"
 
-#import "XPresentation.h"
-#import "XPresentationBubbleAnimation.h"
-#import "XPresentationScaleAnimation.h"
-#import "XPresentationAlertAnimation.h"
-#import "XPresentationPanAnimation.h"
-#import "XPresentationExplodeAnimation.h"
+#import "XCPresentation.h"
+#import "XCPresentationBubbleAnimation.h"
+#import "XCPresentationScaleAnimation.h"
+#import "XCPresentationAlertAnimation.h"
+#import "XCPresentationPanAnimation.h"
+#import "XCPresentationExplodeAnimation.h"
 
 #import "XXXViewController.h"
 
@@ -37,11 +37,11 @@
     XXXViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:NULL] instantiateViewControllerWithIdentifier:@"XXX"];
     vc.presentStyle = PresentStyleBubble;
     
-    XPresentationBubbleAnimation *animation = [[XPresentationBubbleAnimation alloc] init];
+    XCPresentationBubbleAnimation *animation = [[XCPresentationBubbleAnimation alloc] init];
     animation.sourceRect  = btn.frame;
     animation.strokeColor = btn.backgroundColor;
     
-    [XPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
+    [XCPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
 }
 
 /** 👀 显示缩放动画 👀 */
@@ -50,12 +50,12 @@
     XXXViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:NULL] instantiateViewControllerWithIdentifier:@"XXX"];
     vc.presentStyle = PresentStyleScale;
     
-    XPresentationScaleAnimation *animation = [[XPresentationScaleAnimation alloc] init];
+    XCPresentationScaleAnimation *animation = [[XCPresentationScaleAnimation alloc] init];
     animation.animationView = self.imgView;
     animation.sourceFrame   = self.imgView.frame;
     animation.destFrame     = CGRectMake(0, 0, self.view.bounds.size.width, 200);
     
-    [XPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
+    [XCPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
 }
 
 
@@ -65,11 +65,11 @@
     XXXViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:NULL] instantiateViewControllerWithIdentifier:@"XXX"];
     vc.presentStyle = PresentStyleAlert;
     
-    XPresentationAlertAnimation *animation = [[XPresentationAlertAnimation alloc] init];
+    XCPresentationAlertAnimation *animation = [[XCPresentationAlertAnimation alloc] init];
     animation.presentStyle = AlertAnimationPresentStyleFromTop;
     animation.dismissStyle = AlertAnimationDismissStyleToRight;
     
-    [XPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
+    [XCPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
 }
 
 /** 👀 显示 平移动画 👀 */
@@ -78,10 +78,10 @@
     XXXViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:NULL] instantiateViewControllerWithIdentifier:@"XXX"];
     vc.presentStyle = PresentStylePan;
     
-    XPresentationPanAnimation *animation = [[XPresentationPanAnimation alloc] init];
+    XCPresentationPanAnimation *animation = [[XCPresentationPanAnimation alloc] init];
     animation.presentStyle = PanAnimationPresentStyleFromCenter;
     
-    [XPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
+    [XCPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
 }
 
 - (IBAction)showExplodePresent:(id)sender
@@ -89,9 +89,9 @@
     XXXViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:NULL] instantiateViewControllerWithIdentifier:@"XXX"];
     vc.presentStyle = PresentStyleBubble;
     
-    XPresentationExplodeAnimation *animation = [[XPresentationExplodeAnimation alloc] init];
+    XCPresentationExplodeAnimation *animation = [[XCPresentationExplodeAnimation alloc] init];
     
-    [XPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
+    [XCPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
 }
 
 @end

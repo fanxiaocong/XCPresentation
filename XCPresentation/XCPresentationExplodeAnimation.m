@@ -1,6 +1,6 @@
 //
-//  XPresentationExplodeAnimation.m
-//  XPresentationDemo
+//  XCPresentationExplodeAnimation.m
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
@@ -12,9 +12,9 @@
  */
 
 
-#import "XPresentationExplodeAnimation.h"
+#import "XCPresentationExplodeAnimation.h"
 
-@implementation XPresentationExplodeAnimation
+@implementation XCPresentationExplodeAnimation
 
 - (instancetype)init
 {

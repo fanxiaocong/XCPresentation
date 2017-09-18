@@ -1,6 +1,6 @@
 //
 //  XXXViewController.m
-//  XPresentationDemo
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.

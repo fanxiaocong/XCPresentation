@@ -1,6 +1,6 @@
 //
-//  XPresentationAlertAnimation.m
-//  XPresentationDemo
+//  XCPresentationAlertAnimation.m
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
@@ -13,14 +13,14 @@
  */
 
 
-#import "XPresentationAlertAnimation.h"
+#import "XCPresentationAlertAnimation.h"
 
 
 #define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
 
 
-@implementation XPresentationAlertAnimation
+@implementation XCPresentationAlertAnimation
 
 - (instancetype)init
 {
@@ -51,12 +51,12 @@
 {
     switch (self.style)
     {
-        case XPresentationAnimationStylePresent:
+        case XCPresentationAnimationStylePresent:
         {
             [self presentAnimation];
             break;
         }
-        case XPresentationAnimationStyleDismiss:
+        case XCPresentationAnimationStyleDismiss:
         {
             [self dismissAnimation];
             break;

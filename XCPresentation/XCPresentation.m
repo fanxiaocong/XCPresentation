@@ -1,25 +1,25 @@
 //
-//  XPresentation.m
-//  XPresentationDemo
+//  XCPresentation.m
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
 //
 
-#import "XPresentation.h"
+#import "XCPresentation.h"
 
 
-@interface XPresentation ()<UIViewControllerTransitioningDelegate>
+@interface XCPresentation ()<UIViewControllerTransitioningDelegate>
 
 /** 👀 蒙板视图 👀 */
 @property (strong, nonatomic) UIView *maskView;
 /** 👀 动画类 👀 */
-@property (strong, nonatomic) XPresentationAnimation *presentationAnimation;
+@property (strong, nonatomic) XCPresentationAnimation *presentationAnimation;
 
 @end
 
 
-@implementation XPresentation
+@implementation XCPresentation
 
 #pragma mark - 🔓 👀 Public Method 👀
 
@@ -30,11 +30,11 @@
  *  @param presentedViewController  目标控制器（最终要展示的控制器）
  *  @param presentingViewController 源控制器（是从哪个控制器推出的
  */
-+ (void)presentWithPresentationAnimation:(XPresentationAnimation *)presentationAnimation
++ (void)presentWithPresentationAnimation:(XCPresentationAnimation *)presentationAnimation
                  presentedViewController:(UIViewController *)presentedViewController
                 presentingViewController:(UIViewController *)presentingViewController
 {
-    XPresentation *presentation = [[XPresentation alloc] initWithPresentationAnimation:presentationAnimation presentedViewController:presentedViewController presentingViewController:presentingViewController];
+    XCPresentation *presentation = [[XCPresentation alloc] initWithPresentationAnimation:presentationAnimation presentedViewController:presentedViewController presentingViewController:presentingViewController];
     
     // 设置 转场的模式为 自定义
     presentedViewController.modalPresentationStyle = UIModalPresentationCustom;
@@ -46,7 +46,7 @@
 
 #pragma mark - 👀 Init Method 👀 💤
 
-- (instancetype)initWithPresentationAnimation:(XPresentationAnimation *)presentationAnimation
+- (instancetype)initWithPresentationAnimation:(XCPresentationAnimation *)presentationAnimation
                       presentedViewController:(UIViewController *)presentedViewController
                      presentingViewController:(UIViewController *)presentingViewController
 {
@@ -195,13 +195,13 @@
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
-    self.presentationAnimation.style = XPresentationAnimationStylePresent;
+    self.presentationAnimation.style = XCPresentationAnimationStylePresent;
     return self.presentationAnimation;
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-    self.presentationAnimation.style = XPresentationAnimationStyleDismiss;
+    self.presentationAnimation.style = XCPresentationAnimationStyleDismiss;
     return self.presentationAnimation;
 }
 

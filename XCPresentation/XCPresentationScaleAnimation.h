@@ -1,6 +1,6 @@
 //
-//  XPresentationScaleAnimation.h
-//  XPresentationDemo
+//  XCPresentationScaleAnimation.h
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
@@ -11,9 +11,9 @@
  *  备注：缩放的转场动画 🐾
  */
 
-#import "XPresentationAnimation.h"
+#import "XCPresentationAnimation.h"
 
-@interface XPresentationScaleAnimation : XPresentationAnimation
+@interface XCPresentationScaleAnimation : XCPresentationAnimation
 
 /** 👀 要进行动画的 imageView 👀 */
 @property (weak, nonatomic) UIImageView *animationView;

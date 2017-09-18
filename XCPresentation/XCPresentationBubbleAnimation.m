@@ -1,6 +1,6 @@
 //
-//  XPresentationBubbleAnimation.m
-//  XPresentationDemo
+//  XCPresentationBubbleAnimation.m
+//  XCPresentationDemo
 //
 //  Created by 樊小聪 on 2017/9/16.
 //  Copyright © 2017年 樊小聪. All rights reserved.
@@ -10,17 +10,17 @@
  *  备注：气泡缩放动画 🐾
  */
 
-#import "XPresentationBubbleAnimation.h"
+#import "XCPresentationBubbleAnimation.h"
 
 
-@interface XPresentationBubbleAnimation ()<CAAnimationDelegate>
+@interface XCPresentationBubbleAnimation ()<CAAnimationDelegate>
 
 @property (weak, nonatomic) CAShapeLayer *maskLayer;
 
 @end
 
 
-@implementation XPresentationBubbleAnimation
+@implementation XCPresentationBubbleAnimation
 
 
 #pragma mark - 👀 Override 👀 💤
@@ -29,12 +29,12 @@
 {
     switch (self.style)
     {
-        case XPresentationAnimationStylePresent:
+        case XCPresentationAnimationStylePresent:
         {
             [self presentAnimation];
             break;
         }
-        case XPresentationAnimationStyleDismiss:
+        case XCPresentationAnimationStyleDismiss:
         {
             [self dismissAnimation];
             break;
