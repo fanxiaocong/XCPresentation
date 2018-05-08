@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E28D64620A17D4100A0425E /* XCPresentationScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E28D63A20A17D4100A0425E /* XCPresentationScaleAnimation.m */; };
+		1E28D64720A17D4100A0425E /* XCPresentationBubbleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E28D63C20A17D4100A0425E /* XCPresentationBubbleAnimation.m */; };
+		1E28D64820A17D4100A0425E /* XCPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E28D63D20A17D4100A0425E /* XCPresentationAnimation.m */; };
+		1E28D64920A17D4100A0425E /* XCPresentationAlertAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E28D63E20A17D4100A0425E /* XCPresentationAlertAnimation.m */; };
+		1E28D64A20A17D4100A0425E /* XCPresentationExplodeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E28D63F20A17D4100A0425E /* XCPresentationExplodeAnimation.m */; };
+		1E28D64B20A17D4100A0425E /* XCPresentationPanAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E28D64120A17D4100A0425E /* XCPresentationPanAnimation.m */; };
 		1E6D63151F6CC9ED002029B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63141F6CC9ED002029B5 /* main.m */; };
 		1E6D63181F6CC9ED002029B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63171F6CC9ED002029B5 /* AppDelegate.m */; };
 		1E6D631B1F6CC9ED002029B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D631A1F6CC9ED002029B5 /* ViewController.m */; };
@@ -18,12 +24,6 @@
 		1E6D63521F6CD731002029B5 /* XXXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63511F6CD731002029B5 /* XXXViewController.m */; };
 		1E6D63721F6FA967002029B5 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E6D63711F6FA967002029B5 /* 1.png */; };
 		1E6D63821F6FB0DA002029B5 /* XCPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63751F6FB0DA002029B5 /* XCPresentation.m */; };
-		1E6D63831F6FB0DA002029B5 /* XCPresentationAlertAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63771F6FB0DA002029B5 /* XCPresentationAlertAnimation.m */; };
-		1E6D63841F6FB0DA002029B5 /* XCPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63791F6FB0DA002029B5 /* XCPresentationAnimation.m */; };
-		1E6D63851F6FB0DA002029B5 /* XCPresentationBubbleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D637B1F6FB0DA002029B5 /* XCPresentationBubbleAnimation.m */; };
-		1E6D63861F6FB0DA002029B5 /* XCPresentationExplodeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D637D1F6FB0DA002029B5 /* XCPresentationExplodeAnimation.m */; };
-		1E6D63871F6FB0DA002029B5 /* XCPresentationPanAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D637F1F6FB0DA002029B5 /* XCPresentationPanAnimation.m */; };
-		1E6D63881F6FB0DA002029B5 /* XCPresentationScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D63811F6FB0DA002029B5 /* XCPresentationScaleAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E28D63A20A17D4100A0425E /* XCPresentationScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationScaleAnimation.m; sourceTree = "<group>"; };
+		1E28D63B20A17D4100A0425E /* XCPresentationPanAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationPanAnimation.h; sourceTree = "<group>"; };
+		1E28D63C20A17D4100A0425E /* XCPresentationBubbleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationBubbleAnimation.m; sourceTree = "<group>"; };
+		1E28D63D20A17D4100A0425E /* XCPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationAnimation.m; sourceTree = "<group>"; };
+		1E28D63E20A17D4100A0425E /* XCPresentationAlertAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationAlertAnimation.m; sourceTree = "<group>"; };
+		1E28D63F20A17D4100A0425E /* XCPresentationExplodeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationExplodeAnimation.m; sourceTree = "<group>"; };
+		1E28D64020A17D4100A0425E /* XCPresentationBubbleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationBubbleAnimation.h; sourceTree = "<group>"; };
+		1E28D64120A17D4100A0425E /* XCPresentationPanAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationPanAnimation.m; sourceTree = "<group>"; };
+		1E28D64220A17D4100A0425E /* XCPresentationScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationScaleAnimation.h; sourceTree = "<group>"; };
+		1E28D64320A17D4100A0425E /* XCPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationAnimation.h; sourceTree = "<group>"; };
+		1E28D64420A17D4100A0425E /* XCPresentationExplodeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationExplodeAnimation.h; sourceTree = "<group>"; };
+		1E28D64520A17D4100A0425E /* XCPresentationAlertAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationAlertAnimation.h; sourceTree = "<group>"; };
 		1E6D63101F6CC9ED002029B5 /* XPresentationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPresentationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6D63141F6CC9ED002029B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E6D63161F6CC9ED002029B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,18 +77,6 @@
 		1E6D63711F6FA967002029B5 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		1E6D63741F6FB0DA002029B5 /* XCPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentation.h; sourceTree = "<group>"; };
 		1E6D63751F6FB0DA002029B5 /* XCPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentation.m; sourceTree = "<group>"; };
-		1E6D63761F6FB0DA002029B5 /* XCPresentationAlertAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationAlertAnimation.h; sourceTree = "<group>"; };
-		1E6D63771F6FB0DA002029B5 /* XCPresentationAlertAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationAlertAnimation.m; sourceTree = "<group>"; };
-		1E6D63781F6FB0DA002029B5 /* XCPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationAnimation.h; sourceTree = "<group>"; };
-		1E6D63791F6FB0DA002029B5 /* XCPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationAnimation.m; sourceTree = "<group>"; };
-		1E6D637A1F6FB0DA002029B5 /* XCPresentationBubbleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationBubbleAnimation.h; sourceTree = "<group>"; };
-		1E6D637B1F6FB0DA002029B5 /* XCPresentationBubbleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationBubbleAnimation.m; sourceTree = "<group>"; };
-		1E6D637C1F6FB0DA002029B5 /* XCPresentationExplodeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationExplodeAnimation.h; sourceTree = "<group>"; };
-		1E6D637D1F6FB0DA002029B5 /* XCPresentationExplodeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationExplodeAnimation.m; sourceTree = "<group>"; };
-		1E6D637E1F6FB0DA002029B5 /* XCPresentationPanAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationPanAnimation.h; sourceTree = "<group>"; };
-		1E6D637F1F6FB0DA002029B5 /* XCPresentationPanAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationPanAnimation.m; sourceTree = "<group>"; };
-		1E6D63801F6FB0DA002029B5 /* XCPresentationScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPresentationScaleAnimation.h; sourceTree = "<group>"; };
-		1E6D63811F6FB0DA002029B5 /* XCPresentationScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPresentationScaleAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +104,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E28D63920A17D4100A0425E /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1E28D64320A17D4100A0425E /* XCPresentationAnimation.h */,
+				1E28D63D20A17D4100A0425E /* XCPresentationAnimation.m */,
+				1E28D64420A17D4100A0425E /* XCPresentationExplodeAnimation.h */,
+				1E28D63F20A17D4100A0425E /* XCPresentationExplodeAnimation.m */,
+				1E28D64220A17D4100A0425E /* XCPresentationScaleAnimation.h */,
+				1E28D63A20A17D4100A0425E /* XCPresentationScaleAnimation.m */,
+				1E28D63B20A17D4100A0425E /* XCPresentationPanAnimation.h */,
+				1E28D64120A17D4100A0425E /* XCPresentationPanAnimation.m */,
+				1E28D64020A17D4100A0425E /* XCPresentationBubbleAnimation.h */,
+				1E28D63C20A17D4100A0425E /* XCPresentationBubbleAnimation.m */,
+				1E28D64520A17D4100A0425E /* XCPresentationAlertAnimation.h */,
+				1E28D63E20A17D4100A0425E /* XCPresentationAlertAnimation.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		1E6D63071F6CC9ED002029B5 = {
 			isa = PBXGroup;
 			children = (
@@ -184,18 +203,7 @@
 			children = (
 				1E6D63741F6FB0DA002029B5 /* XCPresentation.h */,
 				1E6D63751F6FB0DA002029B5 /* XCPresentation.m */,
-				1E6D63761F6FB0DA002029B5 /* XCPresentationAlertAnimation.h */,
-				1E6D63771F6FB0DA002029B5 /* XCPresentationAlertAnimation.m */,
-				1E6D63781F6FB0DA002029B5 /* XCPresentationAnimation.h */,
-				1E6D63791F6FB0DA002029B5 /* XCPresentationAnimation.m */,
-				1E6D637A1F6FB0DA002029B5 /* XCPresentationBubbleAnimation.h */,
-				1E6D637B1F6FB0DA002029B5 /* XCPresentationBubbleAnimation.m */,
-				1E6D637C1F6FB0DA002029B5 /* XCPresentationExplodeAnimation.h */,
-				1E6D637D1F6FB0DA002029B5 /* XCPresentationExplodeAnimation.m */,
-				1E6D637E1F6FB0DA002029B5 /* XCPresentationPanAnimation.h */,
-				1E6D637F1F6FB0DA002029B5 /* XCPresentationPanAnimation.m */,
-				1E6D63801F6FB0DA002029B5 /* XCPresentationScaleAnimation.h */,
-				1E6D63811F6FB0DA002029B5 /* XCPresentationScaleAnimation.m */,
+				1E28D63920A17D4100A0425E /* Animation */,
 			);
 			path = XCPresentation;
 			sourceTree = "<group>";
@@ -334,17 +342,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E6D63831F6FB0DA002029B5 /* XCPresentationAlertAnimation.m in Sources */,
+				1E28D64720A17D4100A0425E /* XCPresentationBubbleAnimation.m in Sources */,
 				1E6D63821F6FB0DA002029B5 /* XCPresentation.m in Sources */,
+				1E28D64B20A17D4100A0425E /* XCPresentationPanAnimation.m in Sources */,
+				1E28D64A20A17D4100A0425E /* XCPresentationExplodeAnimation.m in Sources */,
 				1E6D631B1F6CC9ED002029B5 /* ViewController.m in Sources */,
-				1E6D63871F6FB0DA002029B5 /* XCPresentationPanAnimation.m in Sources */,
+				1E28D64820A17D4100A0425E /* XCPresentationAnimation.m in Sources */,
+				1E28D64620A17D4100A0425E /* XCPresentationScaleAnimation.m in Sources */,
 				1E6D63181F6CC9ED002029B5 /* AppDelegate.m in Sources */,
+				1E28D64920A17D4100A0425E /* XCPresentationAlertAnimation.m in Sources */,
 				1E6D63151F6CC9ED002029B5 /* main.m in Sources */,
-				1E6D63881F6FB0DA002029B5 /* XCPresentationScaleAnimation.m in Sources */,
-				1E6D63851F6FB0DA002029B5 /* XCPresentationBubbleAnimation.m in Sources */,
-				1E6D63841F6FB0DA002029B5 /* XCPresentationAnimation.m in Sources */,
 				1E6D63521F6CD731002029B5 /* XXXViewController.m in Sources */,
-				1E6D63861F6FB0DA002029B5 /* XCPresentationExplodeAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -480,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

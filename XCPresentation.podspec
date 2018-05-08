@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "XCPresentation"
-  s.version      = "1.0.2"
+  s.version      = "2.0.1"
   s.summary      = "presentation"
 
   s.description  = "presentation自定义转场样式的封装"
@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
   s.source_files  = "XCPresentation"
   s.requires_arc  = true
   s.platform     = :ios, "8.0"
-  s.frameworks   =  'UIKit'
 
 end
 

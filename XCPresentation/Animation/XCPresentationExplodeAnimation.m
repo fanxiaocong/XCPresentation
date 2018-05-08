@@ -40,6 +40,12 @@
 
 - (void)beginAnimation
 {
+    BOOL afterScreenUpdates = NO;
+    
+    if (@available(iOS 10.0, *)) {
+        afterScreenUpdates = YES;
+    }
+    
     [self.contaionerView addSubview:self.toView];
     [self.contaionerView sendSubviewToBack:self.toView];
     
@@ -52,13 +58,12 @@
     
     UIView *fromViewSnapshot = [self.fromView snapshotViewAfterScreenUpdates:NO];
     
-    
     for (CGFloat x=0; x < size.width; x+= size.width / xFactor)
     {
         for (CGFloat y=0; y < size.height; y+= size.height / yFactor)
         {
             CGRect snapshotRegion = CGRectMake(x, y, size.width / xFactor, size.height / yFactor);
-            UIView *snapshot = [fromViewSnapshot resizableSnapshotViewFromRect:snapshotRegion  afterScreenUpdates:NO withCapInsets:UIEdgeInsetsZero];
+            UIView *snapshot = [fromViewSnapshot resizableSnapshotViewFromRect:snapshotRegion  afterScreenUpdates:afterScreenUpdates withCapInsets:UIEdgeInsetsZero];
             snapshot.frame = snapshotRegion;
             [self.contaionerView addSubview:snapshot];
             [snapshots addObject:snapshot];
