@@ -27,15 +27,12 @@
 
 - (void)beginAnimation
 {
-    switch (self.style)
-    {
-        case XCPresentationAnimationStylePresent:
-        {
+    switch (self.style) {
+        case XCPresentationAnimationStylePresent: {
             [self presentAnimation];
             break;
         }
-        case XCPresentationAnimationStyleDismiss:
-        {
+        case XCPresentationAnimationStyleDismiss: {
             [self dismissAnimation];
             break;
         }
@@ -185,8 +182,7 @@
     
     CGFloat maxRadius = 0;
     
-    for (NSValue *value in pointsArr)
-    {
+    for (NSValue *value in pointsArr) {
         CGPoint point = value.CGPointValue;
         
         CGFloat deltaX = point.x - startPoint.x;
@@ -194,8 +190,7 @@
         
         CGFloat radius = sqrt(deltaX * deltaX + deltaY * deltaY);
         
-        if (maxRadius < radius)
-        {
+        if (maxRadius < radius) {
             maxRadius = radius;
         }
     }

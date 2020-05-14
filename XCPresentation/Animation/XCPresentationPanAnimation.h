@@ -14,23 +14,22 @@
 
 #import "XCPresentationAnimation.h"
 
-typedef NS_ENUM(NSInteger, PanAnimationPresentStyle)
-{
-    PanAnimationPresentStyleFromTop = 0,
-    
-    PanAnimationPresentStyleFromBottom,
-    
-    PanAnimationPresentStyleFromLeft,
-    
-    PanAnimationPresentStyleFromRight,
-    
-    PanAnimationPresentStyleFromCenter
+typedef NS_ENUM(NSInteger, XCPanAnimationPresentStyle) {
+    /// 从顶部弹出
+    XCPanAnimationPresentStyleFromTop       = 0,
+    /// 从底部弹出
+    XCPanAnimationPresentStyleFromBottom,
+    /// 从左侧弹出
+    XCPanAnimationPresentStyleFromLeft,
+    /// 从右侧弹出
+    XCPanAnimationPresentStyleFromRight,
+    /// 从中间弹出
+    XCPanAnimationPresentStyleFromCenter
 };
-
 
 @interface XCPresentationPanAnimation : XCPresentationAnimation
 
 /** 👀 显示的样式 👀 */
-@property (assign, nonatomic) PanAnimationPresentStyle presentStyle;
+@property (assign, nonatomic) XCPanAnimationPresentStyle presentStyle;
 
 @end

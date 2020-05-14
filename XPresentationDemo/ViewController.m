@@ -66,8 +66,8 @@
     vc.presentStyle = PresentStyleAlert;
     
     XCPresentationAlertAnimation *animation = [[XCPresentationAlertAnimation alloc] init];
-    animation.presentStyle = AlertAnimationPresentStyleFromTop;
-    animation.dismissStyle = AlertAnimationDismissStyleToRight;
+    animation.presentStyle = XCAlertAnimationPresentStyleFromTop;
+    animation.dismissStyle = XCAlertAnimationDismissStyleToRight;
     
     [XCPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
 }
@@ -79,7 +79,7 @@
     vc.presentStyle = PresentStylePan;
     
     XCPresentationPanAnimation *animation = [[XCPresentationPanAnimation alloc] init];
-    animation.presentStyle = PanAnimationPresentStyleFromCenter;
+    animation.presentStyle = XCPanAnimationPresentStyleFromCenter;
     
     [XCPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
 }

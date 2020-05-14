@@ -24,8 +24,7 @@
 
 - (instancetype)init
 {
-    if (self = [super init])
-    {
+    if (self = [super init]) {
         /// 设置默认配置
         [self setupDefaults];
     }
@@ -38,10 +37,10 @@
  */
 - (void)setupDefaults
 {
-    self.duration      = .75f;
-    _springDamping     = .5f;
-    _presentStyle      = AlertAnimationPresentStyleFromCenter;
-    _dismissStyle      = AlertAnimationDismissStyleToCenter;
+    self.duration   = .75f;
+    _springDamping  = .5f;
+    _presentStyle   = XCAlertAnimationPresentStyleFromCenter;
+    _dismissStyle   = XCAlertAnimationDismissStyleToCenter;
 }
 
 
@@ -49,15 +48,12 @@
 
 - (void)beginAnimation
 {
-    switch (self.style)
-    {
-        case XCPresentationAnimationStylePresent:
-        {
+    switch (self.style) {
+        case XCPresentationAnimationStylePresent: {
             [self presentAnimation];
             break;
         }
-        case XCPresentationAnimationStyleDismiss:
-        {
+        case XCPresentationAnimationStyleDismiss: {
             [self dismissAnimation];
             break;
         }
@@ -85,34 +81,28 @@
     fromFrame = CGRectMake(0, 0, viewW, viewH);
     toFrame   = CGRectMake((SCREEN_WIDTH-viewW)*0.5, (SCREEN_HEIGHT-viewH)*0.5, viewW, viewH);
     
-    switch (self.presentStyle)
-    {
-        case AlertAnimationPresentStyleFromTop:
-        {
+    switch (self.presentStyle) {
+        case XCAlertAnimationPresentStyleFromTop: {
             fromFrame.origin.y = -viewH;
             fromFrame.origin.x = (SCREEN_WIDTH-viewW) * 0.5;
             break;
         }
-        case AlertAnimationPresentStyleFromBottom:
-        {
+        case XCAlertAnimationPresentStyleFromBottom: {
             fromFrame.origin.y = SCREEN_HEIGHT;
             fromFrame.origin.x = (SCREEN_WIDTH-viewW) * 0.5;
             break;
         }
-        case AlertAnimationPresentStyleFromLeft:
-        {
+        case XCAlertAnimationPresentStyleFromLeft: {
             fromFrame.origin.y = (SCREEN_HEIGHT-viewH) * 0.5;
             fromFrame.origin.x = -viewW;
             break;
         }
-        case AlertAnimationPresentStyleFromRight:
-        {
+        case XCAlertAnimationPresentStyleFromRight: {
             fromFrame.origin.y = (SCREEN_HEIGHT-viewH) * 0.5;
             fromFrame.origin.x = SCREEN_WIDTH;
             break;
         }
-        case AlertAnimationPresentStyleFromCenter:
-        {
+        case XCAlertAnimationPresentStyleFromCenter: {
             fromFrame.origin.y = (SCREEN_HEIGHT-viewH) * 0.5;
             fromFrame.origin.x = (SCREEN_WIDTH-viewW) * 0.5;
             self.duration      = .25f;
@@ -120,34 +110,24 @@
         }
     }
     
-    
     animationView.frame = fromFrame;
     
-    if (self.presentStyle == AlertAnimationPresentStyleFromCenter)
-    {
+    if (self.presentStyle == XCAlertAnimationPresentStyleFromCenter) {
         animationView.alpha = 0.f;
         animationView.transform = CGAffineTransformMakeScale(1.2, 1.2);
         
         [UIView animateWithDuration:self.duration animations:^{
-            
             animationView.alpha = 1;
             animationView.transform = CGAffineTransformMakeScale(1.f, 1.f);
-            
         } completion:^(BOOL finished) {
-            
             // 通知上下文 动画结束
             [self endAnimation];
         }];
-    }
-    else
-    {
+    } else {
         /// 开始动画
-        [UIView animateWithDuration:self.duration delay:0.f usingSpringWithDamping:self.springDamping initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            
+        [UIView animateWithDuration:self.duration delay:0.f usingSpringWithDamping:self.springDamping initialSpringVelocity:0.32 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             animationView.frame = toFrame;
-            
         } completion:^(BOOL finished) {
-            
             // 通知上下文 动画结束
             [self endAnimation];
         }];
@@ -170,34 +150,28 @@
     /// 初始化视图 frame
     CGRect toFrame = CGRectMake(0, 0, viewW, viewH);
         
-    switch (self.dismissStyle)
-    {
-        case AlertAnimationDismissStyleToTop:
-        {
+    switch (self.dismissStyle) {
+        case XCAlertAnimationDismissStyleToTop: {
             toFrame.origin.y = -viewH;
             toFrame.origin.x = (SCREEN_WIDTH-viewW) * 0.5;
             break;
         }
-        case AlertAnimationDismissStyleToBottom:
-        {
+        case XCAlertAnimationDismissStyleToBottom: {
             toFrame.origin.y = SCREEN_HEIGHT;
             toFrame.origin.x = (SCREEN_WIDTH-viewW) * 0.5;
             break;
         }
-        case AlertAnimationDismissStyleToLeft:
-        {
+        case XCAlertAnimationDismissStyleToLeft: {
             toFrame.origin.y = (SCREEN_HEIGHT-viewH) * 0.5;
             toFrame.origin.x = -viewW;
             break;
         }
-        case AlertAnimationDismissStyleToRight:
-        {
+        case XCAlertAnimationDismissStyleToRight: {
             toFrame.origin.y = (SCREEN_HEIGHT-viewH) * 0.5;
             toFrame.origin.x = SCREEN_WIDTH;
             break;
         }
-        case AlertAnimationDismissStyleToCenter:
-        {
+        case XCAlertAnimationDismissStyleToCenter: {
             toFrame.origin.y = (SCREEN_HEIGHT-viewH) * 0.5;
             toFrame.origin.x = (SCREEN_WIDTH-viewW) * 0.5;
             duration = .25f;
@@ -205,27 +179,18 @@
         }
     }
     
-    if (self.dismissStyle == AlertAnimationDismissStyleToCenter)
-    {
+    if (self.dismissStyle == XCAlertAnimationDismissStyleToCenter) {
         [UIView animateWithDuration:duration animations:^{
-            
             animationView.alpha = 0.f;
-            
         } completion:^(BOOL finished) {
-            
             // 通知上下文 动画结束
             [self endAnimation];
         }];
-    }
-    else
-    {
+    } else {
         /// 开始动画
         [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            
             animationView.frame = toFrame;
-            
         } completion:^(BOOL finished) {
-            
             // 通知上下文 动画结束
             [self endAnimation];
         }];

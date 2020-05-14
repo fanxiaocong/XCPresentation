@@ -11,7 +11,7 @@
 |---|---|
 |E-mail|1016697223@qq.com|
 |GitHub|https://github.com/fanxiaocong|
-|Blog|http://www.cnblogs.com/fanxiaocong|
+|Blog|https://fanxiaocong.github.io|
 ***
 
 ## Example
@@ -54,7 +54,7 @@ XXXViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:NULL] i
 vc.presentStyle = PresentStylePan;
     
 XCPresentationPanAnimation *animation = [[XCPresentationPanAnimation alloc] init];
-animation.presentStyle = PanAnimationPresentStyleFromCenter;
+animation.presentStyle = XCPanAnimationPresentStyleFromCenter;
     
 [XCPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
 ```
@@ -81,8 +81,8 @@ XXXViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:NULL] i
 vc.presentStyle = PresentStyleAlert;
     
 XCPresentationAlertAnimation *animation = [[XCPresentationAlertAnimation alloc] init];
-animation.presentStyle = AlertAnimationPresentStyleFromTop;
-animation.dismissStyle = AlertAnimationDismissStyleToRight;
+animation.presentStyle = XCAlertAnimationPresentStyleFromTop;
+animation.dismissStyle = XCAlertAnimationDismissStyleToRight;
     
 [XCPresentation presentWithPresentationAnimation:animation presentedViewController:vc presentingViewController:self];
 ```

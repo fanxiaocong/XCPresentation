@@ -13,40 +13,45 @@
 
 #import "XCPresentationAnimation.h"
 
-
-typedef NS_ENUM(NSInteger, AlertAnimationPresentStyle)
-{
-    AlertAnimationPresentStyleFromLeft = 0,
-    
-    AlertAnimationPresentStyleFromRight,
-    
-    AlertAnimationPresentStyleFromTop,
-    
-    AlertAnimationPresentStyleFromBottom,
-    
-    AlertAnimationPresentStyleFromCenter
+/**
+ *  显示的样式
+ */
+typedef NS_ENUM(NSInteger, XCAlertAnimationPresentStyle) {
+    /// 从左侧弹出
+    XCAlertAnimationPresentStyleFromLeft = 0,
+    /// 从右侧弹出
+    XCAlertAnimationPresentStyleFromRight,
+    /// 从顶部弹出
+    XCAlertAnimationPresentStyleFromTop,
+    /// 从底部弹出
+    XCAlertAnimationPresentStyleFromBottom,
+    /// 从中间弹出
+    XCAlertAnimationPresentStyleFromCenter
 };
 
-typedef NS_ENUM(NSInteger, AlertAnimationDismissStyle)
-{
-    AlertAnimationDismissStyleToLeft = 0,
-    
-    AlertAnimationDismissStyleToRight,
-    
-    AlertAnimationDismissStyleToTop,
-    
-    AlertAnimationDismissStyleToBottom,
-    
-    AlertAnimationDismissStyleToCenter
+/**
+ *  消失的样式
+ */
+typedef NS_ENUM(NSInteger, XCAlertAnimationDismissStyle) {
+    /// 到左侧消失
+    XCAlertAnimationDismissStyleToLeft = 0,
+    /// 到右侧消失
+    XCAlertAnimationDismissStyleToRight,
+    /// 到顶部消失
+    XCAlertAnimationDismissStyleToTop,
+    /// 到底部消失
+    XCAlertAnimationDismissStyleToBottom,
+    /// 到中间消失
+    XCAlertAnimationDismissStyleToCenter
 };
 
 
 @interface XCPresentationAlertAnimation : XCPresentationAnimation
 
 /** 👀 显示的样式 👀 */
-@property (assign, nonatomic) AlertAnimationPresentStyle presentStyle;
+@property (assign, nonatomic) XCAlertAnimationPresentStyle presentStyle;
 /** 👀 隐藏的样式 👀 */
-@property (assign, nonatomic) AlertAnimationDismissStyle dismissStyle;
+@property (assign, nonatomic) XCAlertAnimationDismissStyle dismissStyle;
 /** 👀 伸缩幅度：默认 0.5 (对于 AlertAnimationPresentStyleFromCenter 无效) 👀 */
 @property (assign, nonatomic) CGFloat springDamping;
 
